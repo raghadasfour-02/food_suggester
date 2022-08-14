@@ -15,7 +15,7 @@ const theme = createMuiTheme({
   },
   typography: {
     fontFamily: [
-      'Roboto'
+      'Arial'
     ],
     h4: {
       fontWeight: 600,
