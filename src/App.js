@@ -2,7 +2,11 @@ import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/sty
 import {Typography} from '@material-ui/core'; 
 import NavBar from './components/NavBar'
 import FoodBtn from './components/FoodBtn'
+import React from "react";
+import Popup from 'reactjs-popup';
 import './App.css';
+import './index.css';
+import './EmojiBurst.js';
 
 const theme = createMuiTheme({
   palette: {
@@ -60,9 +64,13 @@ function App() {
           <Typography variant="h4" className={classes.bigSpace} color="primary">
              Ready for some {'🔥'} food suggestions?
           </Typography>
+
+
           <div className={`${classes.grid} ${classes.littleSpace}`}>
             <FoodBtn txt="Gimme food suggestion!"/>
           </div>
+
+          
         </div>
         <div className={classes.bigSpace}>
         </div>
