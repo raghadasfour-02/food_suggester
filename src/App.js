@@ -3,7 +3,6 @@ import {Typography} from '@material-ui/core';
 import NavBar from './components/NavBar'
 import FoodBtn from './components/FoodBtn'
 import React from "react";
-import Popup from 'reactjs-popup';
 import './App.css';
 import './index.css';
 import './EmojiBurst.js';
@@ -55,7 +54,7 @@ const styles = makeStyles({
 
 function App() {
   const classes = styles(); 
-
+  
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
@@ -65,11 +64,9 @@ function App() {
              Ready for some {'🔥'} food suggestions?
           </Typography>
 
-
           <div className={`${classes.grid} ${classes.littleSpace}`}>
             <FoodBtn txt="Gimme food suggestion!"/>
           </div>
-
           
         </div>
         <div className={classes.bigSpace}>

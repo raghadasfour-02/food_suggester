@@ -207,7 +207,7 @@ const FoodBtn = () =>{
       })
     }
 
-    return <StyledButton onClick={ShowOptions} variant="contained"> Gimme food suggestion! </StyledButton>
+    return <StyledButton onClick={function(event){ addTreats(); ShowOptions()}} variant="contained"> Gimme food suggestion! </StyledButton>
 }
 
 export default FoodBtn
